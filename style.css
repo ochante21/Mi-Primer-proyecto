@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 1vh 3vw 1vh 3vw;
+}
+.logo_contenedor{
+    /* flex-grow: 1; */
+}
+.logo{
+    height: 4vh;
+    width: 60px;
+    background-color: blue;
+    display: inline-block;
+    vertical-align: bottom;
+}
+ h1{
+    display: inline-block;
+ }
+ nav{
+    font-size: larger;
+    align-items:center;
+    border: 2px solid black;
+    align-self: flex-end;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: space-between;
+ }
+ .texto_nav{
+    margin : 0 10px 0 10px;;
+ }
+ .buscar{
+    height:2vh;
+    width: 60px;
+    background-color: blueviolet;
+
+
+ }
+ .inicio_sesion{
+    height: 4vh;
+    width: 60px;
+    background-color: rgb(255, 0, 64);
+    align-self: flex-end;
+ }
+ main{
+    margin: 1vh 3vw 1vh 3vw;
+ }
+ .portada{
+    
+    height: 15vh;
+    width: 80vw;
+    justify-self: center;
+    background-color: aquamarine;
+ }
