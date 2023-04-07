@@ -13,9 +13,7 @@ header{
     flex-wrap: wrap;
     margin: 1vh 3vw 1vh 3vw;
 }
-.logo_contenedor{
-    /* flex-grow: 1; */
-}
+
 .logo{
     height: 4vh;
     width: 60px;
@@ -55,10 +53,45 @@ header{
  main{
     margin: 1vh 3vw 1vh 3vw;
  }
- .portada{
-    
-    height: 15vh;
-    width: 80vw;
-    justify-self: center;
-    background-color: aquamarine;
+
+ .portada{    
+    height: 30vh;
+    width: 80%;
+    border: 2px solid black;
+    position: relative;
+    left: 10%;
+    display: flex;
+    justify-content: center;
  }
+ .portada> img{
+   height: 100%;
+   width: 50vw;
+ }
+ .boton{
+   font-size: 30px;
+   width: 35px;
+   height: 35px;
+   line-height: 35px;
+   border-radius: 50%;
+   background-color: rgba(0, 0, 0, .7);
+   text-align: center;
+   font-weight: bold;
+   position: absolute;
+   color: #fff;
+   box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+   -webkit-transition: all .3s ease;
+   -o-transition: all .3s ease;
+   transition: all .3s ease ;
+ }
+.boton:hover{
+   cursor: pointer;
+   transform: scale(1.2,1.2);
+}
+.atras{
+   left: 2%;
+   top: 40%
+}
+.adelante{
+   right: 2%;
+   top: 40%;
+}
