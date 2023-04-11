@@ -61,12 +61,16 @@ header{
     position: relative;
     left: 10%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
  }
- .portada> img{
+ .imagenPortada{
    height: 100%;
-   width: 50vw;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   /* border: 2px solid yellow; */
  }
+ 
  .boton{
    font-size: 30px;
    width: 35px;
@@ -87,11 +91,21 @@ header{
    cursor: pointer;
    transform: scale(1.2,1.2);
 }
-.atras{
+#prev{
    left: 2%;
    top: 40%
 }
-.adelante{
+#next{
    right: 2%;
    top: 40%;
 }
+.imagenPort{
+   height: 100%;
+   width: 75vw;
+   /* object-fit: cover; */
+}
+
+
+
+
+

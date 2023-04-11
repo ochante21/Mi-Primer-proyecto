@@ -1,41 +1,44 @@
 //const carousel = document.querySelector('.carousel');
 
 let imagenes = ['././assets/imagenes/Cinema.jpg',"./assets/imagenes/Costume_Party.jpg","./assets/imagenes/Food_Fair.jpg","./assets/imagenes/Music_Concert.jpg"];
-let index = 0;
+let img = ``;
+let indice=0;
 
 //DOM
+let contenedorIMG= document.querySelector('.imagenPortada');
+let botonNext= document.getElementById('next');
+let botonPrev= document.getElementById('prev');
 
-function carrusel(contenedor){
-contenedor.addEventListener('click', e =>{
-    let atras = contenedor.querySelector('.atras');
-    let adelante= contenedor.querySelector('.adelante');
-    img = contenedor.querySelector('img');
-    tgt= e.target;
+//eventos
+botonNext.addEventListener('click',nextImage);
+botonPrev.addEventListener('click',prevImage);
 
-    if(tgt == atras){
-        if(index>0){
-            img.src = imagenes[index-1];
-            index--;
-        }
-        else{
-            img.scr = imagenes[imagenes.length -1];
-            index = imagenes.length -1;
-        }
-    }
-    else if(tgt == adelante){
-        if(index<imagenes.length -1){
-            img.src = imagenes[index+1];
-            index++;
-        }
-        else{
-            img.scr = imagenes[0];
-            index = 0;
-        }
-    }
-})
+function pruebaBoton(){
+    console.log('hiciste click');
 }
 
-document.addEventListener('DOMContentLoaded',()=>{
-    let contenedor = document.querySelector('.portada');
-    carrusel(contenedor);
-})
+function nextImage() {
+    if(indice<imagenes.length-1){
+        indice++;
+    }
+    else {
+        indice=0;
+    }
+    pintarImagen(imagenes);
+  }
+  function prevImage() {
+    if(indice>0){
+        indice--;
+    }
+    else {
+        indice=imagenes.length-1;
+    }
+    pintarImagen(imagenes);
+  }
+
+function pintarImagen(arrayImagenes){
+    img = `<div><img class="imagenPort" src=${arrayImagenes[indice]}></div>`;
+    contenedorIMG.innerHTML= img ;
+}
+ pintarImagen(imagenes);
+setInterval(nextImage, 3000);
