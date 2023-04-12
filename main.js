@@ -1,4 +1,3 @@
-//const carousel = document.querySelector('.carousel');
 
 let imagenes = ['././assets/imagenes/Cinema.jpg',"./assets/imagenes/Costume_Party.jpg","./assets/imagenes/Food_Fair.jpg","./assets/imagenes/Music_Concert.jpg"];
 let img = ``;
@@ -13,10 +12,7 @@ let botonPrev= document.getElementById('prev');
 botonNext.addEventListener('click',nextImage);
 botonPrev.addEventListener('click',prevImage);
 
-function pruebaBoton(){
-    console.log('hiciste click');
-}
-
+//funciones
 function nextImage() {
     if(indice<imagenes.length-1){
         indice++;
