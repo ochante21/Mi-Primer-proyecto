@@ -141,6 +141,7 @@ figcaption{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   width: 100%;
 }
 
 figcaption>h2{
@@ -152,6 +153,16 @@ figcaption>h2{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.cap{
+   background-image: linear-gradient(to top , rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0));
+   
+}
+.cap>span{
+   padding-left: 2rem;
+   display: block;
+   margin: 5px;
+   color: white;
+}
 
 
 
