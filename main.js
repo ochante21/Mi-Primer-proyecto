@@ -1,14 +1,4 @@
 
-//base provisional
-let portadas = ['././assets/imagenes/Cinema.jpg', "./assets/imagenes/Costume_Party.jpg", "./assets/imagenes/Food_Fair.jpg", "./assets/imagenes/Music_Concert.jpg"];
-let mangas = [
-    { 'id': 1, 'titulo': 'La Mamachon', 'capitulos': [1, 2, 3, 4] },
-    { 'id': 1, 'titulo': 'Procedimientos para llegar a un comun acuerdo', 'capitulos': [1, 2, 3, 4, 5, 6, 7, 8] },
-    { 'id': 2, 'titulo': 'Los Malaventurados no LLoran', 'capitulos': [1, 2, 3, 4, 5] },
-    { 'id': 3, 'titulo': 'Ah pero como Vendo Cassets!', 'capitulos': [1, 2, 3, 4, 5, 6, 7] },
-    { 'id': 4, 'titulo': 'Melancolidos', 'capitulos': [1, 2, 3, 4, 5] },
-    { 'id': 5, 'titulo': 'Solo a Terceros', 'capitulos': [1, 2, 3, 4, 6, 7, 8, 9, 10] }]
-
 //declarar variables
 let indice = 0;
 let intervalo = 2000;
@@ -69,7 +59,7 @@ function pintarMangas(arrayDEmangas) {
         listaDEmangas+=`
             <article>
                 <figure>
-                    <img class="portada_manga" src="./assets/mangas_portada/portada_manga.jpg" alt="Portada del manga">
+                    <img class="portada_manga" src=${manga['portada']} alt="Portada del manga">
                     <figcaption>
                         <h2>${manga['titulo']}</h2>
                         <div class="cap">
