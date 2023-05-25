@@ -165,6 +165,13 @@ figcaption>h2{
    margin: 5px;
    color: white;
 }
+.cap>a{
+   text-decoration: none;
+   padding-left: 2rem;
+   display: block;
+   margin: 5px;
+   color: white;
+}
 
 
 footer {
